@@ -1,0 +1,165 @@
+/* Navigation */
+
+#navbar{
+    flex-direction: column;
+}
+
+#navbar::before{
+    background-color: var(--my-orange);
+    opacity: 0.2;
+}
+
+#navbar ul li a{
+    font-size: 0.8rem;
+    padding: 10px 10px;
+    padding-bottom: 10px;
+}
+
+#logo img{
+    width: 50px;
+    margin: 10px 15px;
+}
+
+/* Home section  */
+
+#home{
+    height: 490px;
+    padding: 1px 60px;
+}
+
+#home::before{
+    height: 615px;
+}
+
+#home h1{
+    font-size: 30px;
+}
+
+#home p{
+    font-size: 13px;
+}
+
+/* Services section */
+#services{
+    flex-direction: column;
+}
+
+#services .box{
+    margin: 12px auto;
+    padding: 14px;
+    width: 80%;
+}
+
+#services .box img{
+    height: 120px;
+    margin: 10px auto;
+}
+
+#services .box p{
+    font-size: 11px;
+    padding: 5px;
+}
+
+
+/* Clients section  */
+
+#client-section{
+    /* height: 450px; */
+    /* padding-bottom: 50px; */
+    padding-top: 25px;
+}
+
+#clients{
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+}
+
+#clients img{
+    height: 75px;
+    padding: 0px 10px;
+    margin: 30px 20px;
+}
+/* Contact section  */
+
+#contact-section{
+    height: 550px;
+}
+#contact-box{
+    width: 70%;
+    margin: 20px auto;
+    padding: 25px 45px;
+
+}
+
+#contact-box::before{
+    width: 75%;
+    border-radius: 20px;
+    
+}
+
+#contact-box form{
+    width: 80%;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 5px;
+    padding-right: 0px;
+    border-radius: 9px;
+    font-size: 0.5rem;
+    border: 2px solid #fe724c;
+    
+
+}
+
+#contact-box label{
+    font-family: var(--my-font);
+    margin: 10px 0px;
+    font-size: 0.7rem;
+    font-weight:590;
+}
+
+
+/* Footer  */
+
+.copy{
+    font-size: 10px;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 28px;
+    
+}
+
+.h-secondary{
+    font-size: 20px;
+    padding: 8px;
+}
+
+.btn{
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+@media screen and (max-width:300px){
+    #contact-box{
+        padding: 0px;
+
+    }
+
+    #contact-box::before{
+        opacity: 0;
+    }
+
+    #home h1{
+        font-size: 1.2rem;
+    }
+
+    #navbar ul li a{
+
+        padding: 5px;
+    }
+}
